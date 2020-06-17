@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &479614128332712554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7515795961719998783}
+  - component: {fileID: 4142433664583905539}
+  - component: {fileID: 2548516541848095014}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7515795961719998783
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479614128332712554}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.4364107, y: -2.6796288, z: -110.015625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4142433664583905539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479614128332712554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd5b6903ed1f764cb9cb7c2595fde37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poolSize: 50
+  _collectableList: []
+  collectablePrefab: {fileID: 3565497136575041800, guid: 67ad3d4e60adf4f47885e56a09a5c012,
+    type: 3}
+  commonThreshold: 0.8
+  staminaThreshold: 1
+  _collectableTypeList:
+  - {fileID: 11400000, guid: 9e5a11ded03e72b479aa760227355b31, type: 2}
+  - {fileID: 11400000, guid: 826b57eab4cac3447be0902a18c6b9c0, type: 2}
+  xOffsetLists:
+  - list:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  - list:
+    - 0
+    - 0.5
+    - 1
+    - 1
+    - 1
+    - 1
+    - 0.5
+    - 0
+--- !u!114 &2548516541848095014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479614128332712554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e51f1c571d0cf774296d9ad87769efb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stamina: 1
+  staminaDecreaseValue: 0.001
+  score: 0
+  coins: 0
+  staminaSlider: {fileID: 0}
+  scoreText: {fileID: 0}
+  coinsText: {fileID: 0}
